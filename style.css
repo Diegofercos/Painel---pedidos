@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f8;
+  color: #19212b;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 48px auto;
+}
+
+.topo,
+.painel-cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sobre {
+  margin: 0 0 8px;
+  color: #536579;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.descricao {
+  color: #657386;
+}
+
+.indicador {
+  color: #28764b;
+  font-size: 14px;
+}
+
+.painel {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid #e1e6eb;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 16px #19212b0a;
+}
+
+.painel-cabecalho h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+}
+
+#total-pedidos {
+  color: #657386;
+  font-size: 14px;
+}
+
+.tabela-rolagem {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #e9edf1;
+  vertical-align: middle;
+}
+
+th {
+  color: #657386;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+select {
+  min-width: 140px;
+  padding: 9px;
+  border: 1px solid #ccd5df;
+  border-radius: 7px;
+  background: white;
+  color: #19212b;
+}
+
+.mensagem {
+  min-height: 20px;
+  color: #28764b;
+  font-size: 14px;
+}
+
+.aviso {
+  color: #657386;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin-top: 28px;
+  }
+
+  .topo {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .painel {
+    padding: 16px;
+  }
+}
