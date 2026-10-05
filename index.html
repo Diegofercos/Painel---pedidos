@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de pedidos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="topo">
+      <div>
+        <p class="sobre">ÁREA DA EQUIPE</p>
+        <h1>Pedidos</h1>
+        <p class="descricao">Acompanhe os pedidos e atualize o andamento.</p>
+      </div>
+      <span class="indicador">● Atualização de demonstração</span>
+    </header>
+
+    <section class="painel" aria-labelledby="titulo-lista">
+      <div class="painel-cabecalho">
+        <h2 id="titulo-lista">Pedidos recebidos</h2>
+        <span id="total-pedidos"></span>
+      </div>
+
+      <div class="tabela-rolagem">
+        <table>
+          <thead>
+            <tr>
+              <th>Pedido</th>
+              <th>Cliente</th>
+              <th>Itens</th>
+              <th>Total</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="lista-pedidos"></tbody>
+        </table>
+      </div>
+      <p id="mensagem" class="mensagem" aria-live="polite"></p>
+    </section>
+
+    <p class="aviso">
+      Protótipo com pedidos fictícios. As alterações ficam salvas apenas neste navegador.
+    </p>
+  </main>
+</body>
+</html>
